@@ -1,0 +1,35 @@
+.title{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 100px;
+}
+
+.table{
+  width: 80%;
+  margin: 0 auto;
+  thead{
+    background: #FF5733;
+    color: #fff;
+    th{
+      text-align: center;
+    }
+  }
+  tbody{
+    background: #bbcfdd;
+    color: #000;
+    text-align: center;
+  }
+}
+
+.container{
+  text-align: center;
+  button{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #E59866;
+    border-radius: 10px;
+    border: 1px solid #fff;
+  }
+}

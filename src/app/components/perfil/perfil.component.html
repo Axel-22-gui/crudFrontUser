@@ -1,0 +1,19 @@
+<h3 class="title">Lista de perfiles</h3>
+<div class="container">
+  <button (click)="addNewPerf()">Agregar Nuevo Perfil</button>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th *ngFor="let item of columns">{{item.label}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of perfiles; let i = index">
+      <td *ngFor="let subitem of columns">
+        <span *ngIf="subitem.key === 'count'">{{ i+1 }}</span>
+        <span *ngIf="subitem.key !== 'count'">{{ foundByKey(item,subitem.key) }}</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
